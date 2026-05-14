@@ -8,6 +8,7 @@ class segmentTree{
     vector<int> seg;
     segmentTree(int n){
         this->n=4*n;
+        seg.resize(this->n);
     }
     void build(int idx,int low,int high,vector<int> &arr){
         if(low==high){
